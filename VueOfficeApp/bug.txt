@@ -1,0 +1,31 @@
+1.加班审核同意按钮点不上 //已解决
+
+2.请假审核同意按钮点不上 //已解决
+
+3.首页点击图标跳转点不上 //已解决（事件冒泡，点击事件冲突，解决办法：return：false 阻止冒泡）
+
+4.打卡记录，vue找不到内联日历
+
+5.workshop 点击机器进入分组，点击第二次才会触发分组加载内容 //已解决
+（原因：内容是页面加载的时候就加载进来，但是显示的模块还没加载。方法：显示模块改为display:none，给点击事件加判断条件，需要分组的车间才显示页面）；
+
+6.single_machine_maintenance_detail.vue  popup保养类型和popup上次保养时间，没有数据无法调试 //已解决
+
+7.点击跳转页面链接未修改 //已解决
+
+8.single_machine_statistics_month 机器月统计数据 滑块样式不对 //已解决 找到修改滑块样式 
+（echarts代码中dataZoom中的handleIcon ：M0,0 v9.7h5 v-9.7h-5 Z”：解释为：笔移动到坐标（0，0）点开始画笔，相对当前位置，向下走9.7，再向左走5， 再向上走9.7（向下-9.7，即向上9.7），再向右走5，最后关闭画笔）
+
+9.single_machine_maintenance_detail_admin 不能使用的插件效果未改完 //已解决
+
+10.main 点击.card-machine 变成点击全部 （不关touch的事）
+
+11.single_machine_maintenance_detail 点击保养项目查看图片 //已解决 使用element-swiper 组件替换原来的插件
+
+13.vue链接后面加 符号（？、#）xxxxxx跳转还是在本页面
+
+14.vue使用 sessionStorage和location.search不起作用
+
+15.vue使用escape转码会将网址？后面包括问号内容清空，使用encodeURIComponent（‘url’）转码，decodeURIComponent（‘url’）解码就不会出现问题。
+
+16.leave.vue开关，状态改变不正常 //已解决，vue checked状态不会改变 ，改用element switch修改样式
